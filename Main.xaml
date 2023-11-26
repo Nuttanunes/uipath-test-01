@@ -1,0 +1,299 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="946.4,4281.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="956.8,4176.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="list" />
+      <Variable x:TypeArguments="ui:Image" Name="TT" />
+      <Variable x:TypeArguments="ui:Image" Name="SS" />
+      <Variable x:TypeArguments="ui:Image" Name="sS" />
+      <Variable x:TypeArguments="ui:Image" Name="ss" />
+      <Variable x:TypeArguments="x:String" Name="Name" />
+      <Variable x:TypeArguments="x:String" Name="myFile" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="894.4,272" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_32">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[myFile]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Path.GetFileNameWithoutExtension(Directory.GetFiles("C:\Users\User\OneDrive\Documents\SanctionList.xlsx",SearchOption.AllDirectories)(0)).ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="894.4,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="Details of UN Sanction List " />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน" sap:VirtualizedContainerService.HintSize="894.4,3632" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="81f4a946-3d80-4639-94a4-3a049a795bfd" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="860.8,3415.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="798.4,3301.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764.8,3215.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="702.4,3103.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="SanctionList.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668.8,2833.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="606.4,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[list]" />
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="606.4,2512" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_4" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,2319.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ค้นหา'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="81f4a946-3d80-4639-94a4-3a049a795bfd" Text="[CurrentRow(&quot;Name/company&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aps.amlo.go.th/aps/public/dplun/" DesignTimeRectangle="1477, 611, 219, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control input-sm' aaname='' /&gt;" Guid="ad2b3865-dc79-4054-b647-2e6e0f79303c" InformativeScreenshot="4ca08c7160c738afec0fb88d60efb5bb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="1423, 611, 273, 38" ElementType="Text" FriendlyName="'ค้นหา'" FullSelectorArgument="&lt;webctrl parentid='datatable_filter' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='datatable_filter' tag='LABEL' type='' class='' aaname='ค้นหา:' check:innerText='ค้นหา:' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NGetText DisplayName="Get Text 'ค้นหา:IYAD NAZMI'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="81f4a946-3d80-4639-94a4-3a049a795bfd" TextString="[Name]" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://aps.amlo.go.th/aps/public/dplun/" DesignTimeRectangle="1477, 620, 219, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'IYAD NAZMI SALIH KHALIL'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control input-sm' aaname='' /&gt;" Guid="a0cebad1-3388-4aa3-ac34-31bac4b3ad17" InformativeScreenshot="27cf193dbb8b2ab0a24bb4b5b723040f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="1423, 620, 273, 38" ElementType="Text" FriendlyName="'ค้นหา:IYAD NAZMI'" FullSelectorArgument="&lt;webctrl parentid='datatable_filter' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='datatable_filter' tag='LABEL' type='' class='' aaname='ค้นหา:' check:innerText='ค้นหา:' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <If Condition="[Name.ToString = CurrentRow(&quot;Name/company&quot;).ToString]" sap:VirtualizedContainerService.HintSize="510.4,1751.2" sap2010:WorkflowViewState.IdRef="If_3">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,1118.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'view'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81f4a946-3d80-4639-94a4-3a049a795bfd" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://aps.amlo.go.th/aps/public/dplun/" CvElementArea="1736, 846, 60, 41" CvTextArea="1749, 858, 35, 15" CvTextArgument="view" CvType="Button" DesignTimeRectangle="1739, 724, 57, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'view'" FullSelectorArgument="&lt;webctrl id='datatable' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='datatable' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='btn btn-sm btn-primary pull-right' aaname='view' check:innerText='view' /&gt;" Guid="0731e522-6ff6-4df6-880a-81de5461eef5" InformativeScreenshot="f0bc12489d056bb119a3b823d61bc88d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CvElementArea="1474, 609, 223, 41" CvTextArea="1420, 617, 48, 17" CvTextArgument="FuWn:" CvType="InputBox" DesignTimeRectangle="977, 611, 719, 44" ElementType="InputBox" FriendlyName="'ค้นหา:ASHRAF MUHAMMAD'" FullSelectorArgument="&lt;webctrl id='datatable_filter' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='datatable_filter' tag='DIV' type='' class='dataTables_filter' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'Chrome Legacy Window'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="3" ScopeIdentifier="81f4a946-3d80-4639-94a4-3a049a795bfd" Version="V3">
+                                            <uix:NMouseScroll.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="9, 145, 1920, 884" DesignTimeScaleFactor="1.25" FriendlyName="'Chrome Legacy Window'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' check:text='Chrome Legacy Window' /&gt;" Guid="30992307-7cf2-492e-80c9-b9236ef4cdd4" InformativeScreenshot="ada1dec1964bc85c96b6e1fa00a7b1d1.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน -*' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="UIA" Version="V2" Visibility="Interactive" />
+                                            </uix:NMouseScroll.Target>
+                                          </uix:NMouseScroll>
+                                          <uix:NTakeScreenshot DisplayName="Take Screenshot 'Chrome Legacy Window'" FileName="[&quot;Details of UN Sanction List\&quot;+CurrentRow.ByField(&quot;Name/company&quot;)+&quot;.png&quot;]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="433.6,233.6" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_4" ScopeIdentifier="81f4a946-3d80-4639-94a4-3a049a795bfd" Version="V3">
+                                            <uix:NTakeScreenshot.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="9, 145, 1920, 884" DesignTimeScaleFactor="1.25" FriendlyName="'Chrome Legacy Window'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' check:text='Chrome Legacy Window' /&gt;" Guid="85a4096a-e5ce-4a83-b767-e1b1e1bdb2aa" InformativeScreenshot="986c6feec55465a24a547130a77b37f8.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน -*' /&gt;" SearchSteps="Selector, FuzzySelector" SelectionStrategy="UIA" Version="V2" Visibility="Interactive" />
+                                            </uix:NTakeScreenshot.Target>
+                                          </uix:NTakeScreenshot>
+                                          <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Status&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Found&quot;]" />
+                                          <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Flag&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Success&quot;]" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,449.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Status&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Not Found&quot;]" />
+                                          <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Flag&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Fail&quot;]" />
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAN6SURBVDhPhZPdT9tVGMcf4i52YeLf4KWLV5rohfOWmLiYGMXpNOJ41cHYGFvIhLWIpaPQFMZLi1BYQyl9hdEX+MlKaaHtWtrSUvrrC4XytkGqONBNhNm1X38MLtSY+L05Oed5zud5zjnfQ/+lztEIRdZ2STW1/EZ194OzzNwm1cg8J9H/Uf94nNafZOmOYfFNiX7xQVWnO/h5k+0sTz6XVyRyEICTzL+Jq0ICZfDViyL7h6Xi2QKBKvSt3BKLayfjGLSw6B6NrHJr/O+V8x/cZRLvd91jzxwcZmgj/fQY0GeJ0wCT+IyvCPzROhzMzDujuSeBMLKLEeTYKPYXWET9yZyCSRwKVaFnFe1OXrMqRHKuW3KzabrNTbjAhV5z7PnDQAw5fwDbgSjs9ihskyFszM6/AD1eXELPvQgutTsFvAE/tWgWiOrkPo4Uo0ZlkB+cZQEu0WVbwI2RGD7RLuFTbQI1xiVMTkWQ5cArvjhatGFltdRzqk2/SFTb66XCZvvr0jGW/T25ikfBOKr1UVxxp/EdY8M1Zh7XvT/jCgeJe1hkVlLQ2pbTQlUw/+1KMx1tPlMqnrEOMnFknmUw6VvHNz+uo2L6EfSMBCYzD1enUrjq2ILetYbsnxlY59Yh1oaj2umVfOJuNL9peGHV0D4CudyObqEWhboYPhpiccvsxHWzFx8rIygeW0bHbR1k/TMwtelQ+4P3lxs9nkpKbO7ltVuSBeqmoZ3m+mG01vShvMuByplt1N8PoWx8CaX2bZQpfOiolqL+lg7q+r79kjZ3xWtfak6RSB2iS3t4qUNi6TI09OMafwwyiRFlphSKzCl8ZVpBycQaOromcJM3gsEGBTqFhonikYcvc10QpR/vU43UQ1XdnuLeJk3OanBh59cD+AMp9Oj8kGp8cIU2sff0ENNMEFqRGo0Kv4Avc5Lo6BmPVNLqoIstji/q+7zPDdYEtrZ2kTkyUYRFLpFANpnEzuZPGJ1OQnDXB5kp1nDkAYkufAxoHJynun7fW1ygRTgcEkvUQaOBYXdt98NwuZMw2eIHUn3Iwb297Os25x3u2OferTKSxrZ8DCgpPE9qs5POFWvovaK+vEKx83R5m6vgcqd7lXPob5xxbtYNBF4ZNXvz5hbi1GtkqUMfJqtv8xjwb71zeezFWC6ZPc/9k9px78bpIetJtX+I6C+7OVmsxdyQLwAAAABJRU5ErkJggg==" InformativeScreenshot="abe03bea9f1d09c1b3277d3612730a2d.jpg" Selector="&lt;html app='chrome.exe' title='รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน' /&gt;" Title="รายชื่อบุคคลที่ถูกกำหนด | สำนักงานป้องกันและปราบปรามการฟอกเงิน" Url="https://aps.amlo.go.th/aps/public/dplun/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
